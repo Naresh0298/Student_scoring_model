@@ -7,7 +7,7 @@ import numpy as np
 app = FastAPI()
 
 try:
-    model = joblib.load("./model/best_lr_model.joblib")
+    model = joblib.load("./app/model/best_lr_model.joblib")
 except FileNotFoundError:
     raise Exception("Model is not found")
 
